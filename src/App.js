@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import CallbackHook from "./components/CallbackHook";
+import EffectHook from "./components/EffectHook";
+import MemoHook from "./components/MemoHook";
+import ReduceHook from "./components/ReduceHook";
+import RefHook from "./components/RefHook";
+import './index.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <EffectHook/>
+    <CallbackHook/>
+    <MemoHook/>
+    <ReduceHook/>
+    <RefHook/>
     </div>
   );
 }
